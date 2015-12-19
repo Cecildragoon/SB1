@@ -1,0 +1,75 @@
+groups:
+  Default:
+    permissions:
+    - essentials.spawn
+    - essentials.rules
+    - essentials.motd
+    - essentials.list
+    - essentials.helpop
+    - essentials.help
+    - essentials.msg
+    - essentials.reply
+    - essentials.exp
+    - askyblock.island.*
+    - askyblock.team.create
+    - askyblock.team.kick
+    - askyblock.team.makeleader
+    - askyblock.team.join
+    - askyblock.coop
+    - askyblock.island.controlpanel
+    - essentials.kit
+    - essentials.ignore
+    options:
+      rank: '1000'
+      prefix: '&e[&7New&e] &7'
+      default: true
+  Mod:
+    permissions:
+    - essentials.ban
+    - essentials.ban.notify
+    - essentials.broadcast
+    - essentials.clearinventory
+    - essentials.ext
+    - essentials.getpos
+    - essentials.helpop.recieve
+    - essentials.invsee
+    - essentials.jails
+    - essentials.jump
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.kill
+    - essentials.mute
+    - essentials.realname
+    - essentials.setwarp
+    - essentials.time
+    - essentials.ptime
+    - essentials.togglejail
+    - essentials.tp
+    - essentials.tphere
+    - essentials.tppos
+    - essentials.tptoggle
+    - essentials.unban
+    - essentials.weather
+    - essentials.whois
+    - essentials.chat.ignoreexempt
+    inheritance:
+    - Default
+    options:
+      build: true
+      rank: '200'
+      prefix: '&5'
+  Admin:
+    permissions:
+    - '*'
+    inheritance:
+    - Mod
+    options:
+      rank: '100'
+      prefix: '&c[&8Owner&c] &8'
+users:
+  d5429948-b2a7-48ab-9e70-21bc5792697d:
+    group:
+    - Owner
+    options:
+      name: TWSSYesterday
+schema-version: 1
